@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"plugins": [
+			{
+				"name": "ts-lit-plugin"
+			}
+		],
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"lib": [
+          "esnext",
+          "dom",
+          "dom.iterable",
+          "es2015.proxy"
+        ],
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"declaration": true,
+		"sourceMap": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"experimentalDecorators": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noImplicitAny": false,
+		"composite": true,
+		"importHelpers": true,
+		"strictNullChecks": true
+	},
+	"include": [
+		"./Research/**/*"
+	],
+	"exclude": [
+		"../node_modules"
+	],
+}

@@ -1,0 +1,38 @@
+{
+  "name": "open-source-research",
+  "version": "0.0.1",
+  "scripts": {
+    "start:dev:research": "webpack-dev-server --config webpack.config.js --mode development --env.APP=Research --env.DEPLOYMENT=Testing --env.MODE=Development",
+    "build:production:research": "webpack --config webpack.config.js --mode production --env.APP=Research --env.DEPLOYMENT=Production --env.MODE=Production",
+    "serve:production:build:research": "es-dev-server --root-dir=./Research/dist/ --config=es-dev-server.config.js",
+    "deploy:production:research": "cd Research && firebase use research &&  firebase deploy --only hosting"
+  },
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.4.0",
+    "animejs": "^3.1.0",
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "@open-wc/building-webpack": "^2.10.9",
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "es-dev-server": "^1.36.2",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "ignore-not-found-export-webpack-plugin": "^1.0.1",
+    "ts-lit-plugin": "^1.1.9",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.0-beta",
+    "typescript-lit-html-plugin": "^0.9.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "latest",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
